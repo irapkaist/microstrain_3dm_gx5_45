@@ -8,7 +8,7 @@
          type="microstrain_3dm_gx5_25_node"
          output="screen">
 
-      <param name="port" value="/dev/ttyACM0" type="str" />
+      <param name="port" value="/dev/ttyACM1" type="str" />
       <param name="baudrate" value="115200" type="int" />
       <param name="device_setup" value="true" type="bool" />
 
@@ -36,7 +36,7 @@
       <param name="ekf_rate" value="100" type="int" />
       <param name="dynamics_mode" value="1" type="int" />
 
-      <remap from="imu/data" to="imu"/>
+      <remap from="imu/data" to="imu" />
    </node>
 
 </launch>
